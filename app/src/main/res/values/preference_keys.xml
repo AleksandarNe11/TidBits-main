@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pk_login_email" translatable="false">pk_login_email</string>
+    <string name="pk_log_out" translatable="false">pk_log_out</string>
+    <string name="pk_num_kids" translatable="false">pk_num_kids</string>
+</resources>

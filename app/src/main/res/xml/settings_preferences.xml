@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory>
+        <Preference
+            app:key="@string/pk_login_email"
+            app:title="@string/login_email"
+            app:summary="@string/placeholder_email" />
+
+        <Preference
+            app:key="@string/pk_num_kids"
+            app:title="@string/number_of_kids_registered"
+            app:summary="@string/placeholder_number_of_kids"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+        <Preference
+            app:key="@string/pk_log_out"
+            app:title="@string/log_out" />
+    </PreferenceCategory>
+
+
+
+</androidx.preference.PreferenceScreen>

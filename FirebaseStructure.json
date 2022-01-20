@@ -1,0 +1,183 @@
+{
+  "childUsers" : {
+    "child_1" : {
+      "age" : 4,
+      "avatarFile" : "giraffe.png",
+      "id" : "child_1",
+      "lastPlaytime" : "2021-12-07T15:36:38.211",
+      "levels" : {
+        "mathematics" : 1,
+        "spelling" : 1,
+        "vocabulary" : 1
+      },
+      "name" : "Aleks",
+      "progress" : {
+        "mathematics" : 0,
+        "spelling" : 0,
+        "vocabulary" : 0
+      }
+    },
+    "child_2" : {
+      "age" : 8,
+      "avatarFile" : "giraffe.png",
+      "id" : "child_2",
+      "lastPlaytime" : "2021-12-07T15:36:38.211",
+      "levels" : {
+        "mathematics" : 2,
+        "spelling" : 2,
+        "vocabulary" : 2
+      },
+      "name" : "Nicholas",
+      "progress" : {
+        "mathematics" : 0,
+        "spelling" : 0,
+        "vocabulary" : 0
+      }
+    }
+  },
+  "questions" : {
+    "q1" : {
+      "Options" : [ "7", "0", "2", "4" ],
+      "correctResponse" : 3,
+      "imageBased" : false,
+      "imageURL" : "",
+      "incorrectResponse" : "Hint: try counting up twice from two",
+      "questionPrompt" : "2 + 2 = X",
+      "questionText" : "What number equals two plus two?"
+    },
+    "q2" : {
+      "Options" : [ "1", "0", "2", "3" ],
+      "correctResponse" : 1,
+      "imageBased" : false,
+      "imageURL" : "",
+      "incorrectResponse" : "Hint: you can't multiply nothing (0) to get something?",
+      "questionPrompt" : "1 x 0 = X",
+      "questionText" : "What is X if it equals 1 times 0?"
+    },
+    "q3" : {
+      "Options" : [ "4", "0", "7", "3" ],
+      "correctResponse" : 0,
+      "imageBased" : true,
+      "imageURL" : "https://i.ibb.co/1X0Dk35/appleSum.png",
+      "incorrectResponse" : "Hint: try counting up once from three",
+      "questionPrompt" : "",
+      "questionText" : "John has 3 apples. Gina gives him one more. How many apples does John have?"
+    },
+    "q4" : {
+      "Options" : [ "8", "0", "4", "6" ],
+      "correctResponse" : 2,
+      "imageBased" : false,
+      "imageURL" : "",
+      "incorrectResponse" : "Hint: try splitting eight into two halves. How many in each half?",
+      "questionPrompt" : "8 / 2 = ?",
+      "questionText" : "What number do you get when you divide eight by two?"
+    },
+    "q5" : {
+      "Options" : [ "1", "10", "8", "12" ],
+      "correctResponse" : 1,
+      "imageBased" : false,
+      "imageURL" : "",
+      "incorrectResponse" : "Hint: the smallest double digit number!",
+      "questionPrompt" : "1 + 9 = X",
+      "questionText" : "What number do you get by adding 1 to 9?"
+    },
+    "q6" : {
+      "Options" : [ "apple", "alppe", "aplpe", "apell" ],
+      "correctResponse" : 0,
+      "imageBased" : true,
+      "imageURL" : "https://i.ibb.co/Vt25r2f/apple.png",
+      "incorrectResponse" : "Hint: ap__e",
+      "questionPrompt" : "",
+      "questionText" : "What is the spelling of this fruit?"
+    },
+    "q7" : {
+      "Options" : [ "bnana", "banena", "benana", "banana" ],
+      "correctResponse" : 3,
+      "imageBased" : true,
+      "imageURL" : "https://i.ibb.co/0GQ9pSV/banana.png",
+      "incorrectResponse" : "Hint: ba _ a _ a",
+      "questionPrompt" : "",
+      "questionText" : "What is the spelling of this fruit?"
+    },
+    "q8" : {
+      "Options" : [ "penicillin", "pencel", "pencil", "pincel" ],
+      "correctResponse" : 2,
+      "imageBased" : true,
+      "imageURL" : "https://i.ibb.co/BCmZwHw/pencil.jpg",
+      "incorrectResponse" : "Hint: pe___il",
+      "questionPrompt" : "",
+      "questionText" : "How do you spell this writing tool?"
+    },
+    "q9" : {
+      "Options" : [ "trane", "train", "tren", "terrain" ],
+      "correctResponse" : 1,
+      "imageBased" : true,
+      "imageURL" : "https://i.ibb.co/hBjwGGc/train.jpg",
+      "incorrectResponse" : "Hint: t___n",
+      "questionPrompt" : "",
+      "questionText" : "How do you spell this vehicle?"
+    },
+    "q10" : {
+      "Options" : [ "table", "tayble", "tabel", "tabul" ],
+      "correctResponse" : 0,
+      "imageBased" : true,
+      "imageURL" : "https://i.ibb.co/HtCgm0h/table.jpg",
+      "incorrectResponse" : "Hint: t___e",
+      "questionPrompt" : "",
+      "questionText" : "How do you spell this?"
+    },
+    "q11" : {
+      "Options" : [ "Canada", "United States", "United Kingdom", "Australia" ],
+      "correctResponse" : 0,
+      "imageBased" : true,
+      "imageURL" : "https://i.ibb.co/bRHRFWt/ca-flag.jpg",
+      "incorrectResponse" : "Hint: The land of maple syrup!",
+      "questionPrompt" : "",
+      "questionText" : "Which country uses this flag?"
+    },
+    "q12" : {
+      "Options" : [ "Canada",  "United Kingdom", "United States", "Australia" ],
+      "correctResponse" : 2,
+      "imageBased" : true,
+      "imageURL" : "https://i.ibb.co/3dV39m8/Flag-United-States-of-America.jpg",
+      "incorrectResponse" : "Hint: Joe Biden is their president.",
+      "questionPrompt" : "",
+      "questionText" : "Which country uses this flag?"
+    },
+    "q13" : {
+      "Options" : [ "Canada",  "Australia" , "United States", "United Kingdom" ],
+      "correctResponse" : 3,
+      "imageBased" : true,
+      "imageURL" : "https://i.ibb.co/0DYWNmD/1200px-Flag-of-the-United-Kingdom-svg.png",
+      "incorrectResponse" : "Hint: The Royal Family of England lives here.",
+      "questionPrompt" : "",
+      "questionText" : "Which country uses this flag?"
+    },
+    "q14" : {
+      "Options" : [ "Denmark", "Finland", "Sweden", "Russia" ],
+      "correctResponse" : 0,
+      "imageBased" : true,
+      "imageURL" : "https://i.ibb.co/k1V9GgW/Flag-of-Denmark-svg.png",
+      "incorrectResponse" : "Hint: The capital city of this country is Copenhagen.",
+      "questionPrompt" : "",
+      "questionText" : "Which country uses this flag?"
+    },
+    "q15" : {
+      "Options" : [ "Argentina", "Mexico", "Brazil", "South Korea" ],
+      "correctResponse" : 3,
+      "imageBased" : true,
+      "imageURL" : "https://i.ibb.co/RzL2NN3/Flag-of-South-Korea-svg.png",
+      "incorrectResponse" : "Hint: try counting up from one",
+      "questionPrompt" : "",
+      "questionText" : "Which country uses this flag?"
+    }
+  },
+  "quizzes" : {
+    "mathematics" : [ null, [ "q1", "q2", "q3", "q4", "q5" ] ],
+    "spelling" : [ null, [ "q6", "q7", "q8", "q9", "q10" ] ],
+    "geography" : [ null, [ "q11", "q12", "q13", "q14", "q15" ] ]
+  },
+  "users" : [ {
+    "childIds" : [ "child_1", "child_2" ]
+  } ]
+}

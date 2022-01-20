@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8E5">
+
+    <View
+        android:id="@+id/viewTop"
+        android:layout_width="wrap_content"
+        android:layout_height="169dp"
+        android:background="@color/light_pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="380dp"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#F62293"
+        android:backgroundTintMode="src_over"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewProfilePicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="@+id/viewTop"
+        app:layout_constraintRight_toRightOf="@+id/viewTop"
+        app:layout_constraintTop_toTopOf="@+id/viewTop"
+        app:srcCompat="@drawable/giraffe" />
+
+    <TextView
+        android:id="@+id/textViewChildName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chewy"
+        android:text="@string/greet_user"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#F62293"
+        android:textSize="36sp"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProfilePicture"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/learningView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/viewTop">
+
+        <TextView
+            android:id="@+id/textViewWhatToLearn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/chewy"
+            android:text="@string/selection_question"
+            android:textAlignment="center"
+            android:textColor="#2277F6"
+            android:textSize="26sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mathConstraintLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textViewWhatToLearn"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/geographyConstraintLayout">
+
+            <ImageButton
+                android:id="@+id/mathButton"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:background="#00FFFFFF"
+                android:foreground="@drawable/math"
+                android:foregroundGravity="fill"
+                android:foregroundTint="#4DFFFFFF"
+                android:foregroundTintMode="multiply"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/subject_background" />
+
+            <ProgressBar
+                android:id="@+id/mathProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="75"
+                android:progressDrawable="@drawable/progress_bar"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/textViewMath"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:id="@+id/textViewMathLevel"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:fontFamily="@font/chewy"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="#F62293"
+                android:textSize="36sp"
+                app:layout_constraintLeft_toLeftOf="@id/mathProgressBar"
+                app:layout_constraintRight_toRightOf="@id/mathProgressBar"
+                app:layout_constraintTop_toTopOf="@+id/mathProgressBar"
+                app:layout_constraintBottom_toBottomOf="@id/mathProgressBar"/>
+
+            <TextView
+                android:id="@+id/textViewMath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:text="@string/math"
+                android:textAlignment="center"
+                android:textColor="#F62293"
+                android:textSize="36sp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@id/mathProgressBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/geographyConstraintLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textViewWhatToLearn"
+            app:layout_constraintLeft_toRightOf="@id/mathConstraintLayout"
+            app:layout_constraintRight_toRightOf="parent">
+            <ImageButton
+                android:id="@+id/geographyButton"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:background="#00FFFFFF"
+                android:foreground="@drawable/science"
+                android:foregroundGravity="fill"
+                android:foregroundTint="#33FFFFFF"
+                android:foregroundTintMode="multiply"
+                android:scaleType="fitXY"
+                android:padding="10dp"
+                app:srcCompat="@drawable/subject_background"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <ProgressBar
+                android:id="@+id/geographyProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="60"
+                android:progressDrawable="@drawable/progress_bar"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/textViewGeography"/>
+
+            <TextView
+                android:id="@+id/textViewGeographyLevel"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:fontFamily="@font/chewy"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="#F62293"
+                android:textSize="36sp"
+                app:layout_constraintLeft_toLeftOf="@+id/geographyProgressBar"
+                app:layout_constraintRight_toRightOf="@+id/geographyProgressBar"
+                app:layout_constraintTop_toTopOf="@+id/geographyProgressBar"
+                app:layout_constraintBottom_toBottomOf="@+id/geographyProgressBar"/>
+
+            <TextView
+                android:id="@+id/textViewGeography"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/chewy"
+                android:text="@string/geography"
+                android:textAlignment="center"
+                android:textColor="#F62293"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/geographyProgressBar" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/spellingConstraintLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/mathConstraintLayout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <ImageButton
+                android:id="@+id/spellingButton"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:background="#00FFFFFF"
+                android:foreground="@drawable/languages"
+                android:foregroundGravity="fill"
+                android:foregroundTint="#33FFFFFF"
+                android:foregroundTintMode="multiply"
+                android:scaleType="fitXY"
+                android:padding="10dp"
+                app:srcCompat="@drawable/subject_background"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ProgressBar
+                android:id="@+id/spellingProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="90"
+                android:progressDrawable="@drawable/progress_bar"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/textViewSpelling"/>
+
+            <TextView
+                android:id="@+id/textViewSpelling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:text="@string/spelling"
+                android:textAlignment="center"
+                android:textColor="#F62293"
+                android:textSize="36sp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@id/spellingProgressBar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:id="@+id/textViewSpellingLevel"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:fontFamily="@font/chewy"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="#F62293"
+                android:textSize="36sp"
+                app:layout_constraintTop_toTopOf="@id/spellingProgressBar"
+                app:layout_constraintBottom_toBottomOf="@id/spellingProgressBar"
+                app:layout_constraintLeft_toLeftOf="@id/spellingProgressBar"
+                app:layout_constraintRight_toRightOf="@id/spellingProgressBar"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

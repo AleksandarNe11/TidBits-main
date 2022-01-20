@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8E5"
+    tools:context=".UserSwitcherActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chewy"
+        android:textSize="@dimen/user_switcher_title"
+        android:text="@string/user_switcher_title"
+        app:layout_constraintBottom_toTopOf="@+id/userSwitcherRecyclerView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userSwitcherRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:id="@+id/btnManageUser"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="@string/user_switcher_manage_user"
+        app:layout_constraintTop_toBottomOf="@id/userSwitcherRecyclerView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
